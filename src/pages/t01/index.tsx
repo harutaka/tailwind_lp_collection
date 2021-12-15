@@ -14,9 +14,9 @@ const T01Index: NextPage = () => {
 
       <header
         id="header"
-        className="max-w-[960px] mx-auto py-0 px-[4%] text-center flex justify-between items-center my-auto"
+        className="flex justify-between items-center py-0 px-[4%] my-auto mx-auto max-w-[960px] text-center"
       >
-        <h1 className="w-[120px] leading-none px-0 py-2.5">
+        <h1 className="py-2.5 px-0 w-[120px] leading-none">
           <Link href="index.html">
             <a>
               <Image src="/img/t01/logo.svg" alt="Profile" width={120} height={40} />
@@ -24,7 +24,7 @@ const T01Index: NextPage = () => {
           </Link>
         </h1>
         <nav>
-          <ul className="flex px-2.5 py-0">
+          <ul className="flex py-0 px-2.5">
             <li className="ml-[30px]">
               <Link href="#about">
                 <a className="text-[#24292e] hover:opacity-70">About</a>
@@ -44,8 +44,8 @@ const T01Index: NextPage = () => {
           <Image src="/img/t01/mainvisual.jpg" alt="テキスト" width={1920} height={600} className="object-cover" />
         </div>
 
-        <section id="about" className="max-w-[960px] mt-0 mx-auto mb-[100px] py-0 px-[4%] text-center">
-          <h2 className="inline-block text-[2rem] text-center mb-[60px] border-b-solid border-b border-[#383e45] font-bold">
+        <section id="about" className="py-0 px-[4%] mx-auto mt-0 mb-[100px] max-w-[960px] text-center">
+          <h2 className="inline-block mb-[60px] text-[2rem] font-bold text-center border-b border-[#383e45] border-solid">
             About
           </h2>
           <div className="flex justify-center items-center">
@@ -59,7 +59,7 @@ const T01Index: NextPage = () => {
               />
             </div>
             <div className="text-left">
-              <h3 className="text-base my-2.5 mx-0 font-bold">KAKERU MIYAICHI</h3>
+              <h3 className="my-2.5 mx-0 text-base font-bold">KAKERU MIYAICHI</h3>
               <p>
                 テキストテキストテキストテキストテキストテキストテキスト
                 <br />
@@ -71,8 +71,8 @@ const T01Index: NextPage = () => {
           </div>
         </section>
 
-        <section id="bicycle" className="max-w-[960px] mt-0 mx-auto mb-[100px] py-0 px-[4%] text-center">
-          <h2 className="inline-block text-[2rem] text-center mb-[60px] border-b-solid border-b border-[#383e45] font-bold">
+        <section id="bicycle" className="py-0 px-[4%] mx-auto mt-0 mb-[100px] max-w-[960px] text-center">
+          <h2 className="inline-block mb-[60px] text-[2rem] font-bold text-center border-b border-[#383e45] border-solid">
             Bicycle
           </h2>
           <ul className="flex justify-between">
@@ -80,7 +80,7 @@ const T01Index: NextPage = () => {
               return (
                 <li className="w-[32%]" key={item}>
                   <Image src={item} alt="テキストテキストテキスト" width={640} height={424} />
-                  <h3 className="text-base my-2.5 mx-0 font-bold">タイトルタイトル</h3>
+                  <h3 className="my-2.5 mx-0 text-base font-bold">タイトルタイトル</h3>
                   <p>テキストテキストテキスト</p>
                 </li>
               )
@@ -89,7 +89,7 @@ const T01Index: NextPage = () => {
         </section>
       </main>
 
-      <footer id="footer" className="text-[0.5rem] py-2.5 px-0 text-center">
+      <footer id="footer" className="py-2.5 px-0 text-[0.5rem] text-center">
         <p>&copy; 2020 Profile</p>
       </footer>
     </>
