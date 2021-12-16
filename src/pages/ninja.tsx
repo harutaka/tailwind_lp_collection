@@ -253,6 +253,213 @@ const Course20 = () => {
   )
 }
 
+const Course21 = () => {
+  return (
+    <>
+      <p>pタグの中にこのように{"<div></div>"}を文章として表出してください。</p>
+    </>
+  )
+}
+
+const Course22 = () => {
+  return (
+    <>
+      <div style={{ writingMode: "vertical-rl", textOrientation: "upright" }}>
+        <p className="text-black">ninjacode ☆忍者CODE☆ この文字を縦書きしよう</p>
+      </div>
+    </>
+  )
+}
+
+const Course23 = () => {
+  return (
+    <div>
+      <div className="mb-4">
+        <span className="inline-block min-w-[250px] bg-yellow-300">この要素の長さと</span>
+      </div>
+      <div className="mb-4">
+        <span className="inline-block min-w-[250px] bg-yellow-300">この要素の長さを統一してみましょう！</span>
+      </div>
+    </div>
+  )
+}
+
+const Course26 = () => {
+  return (
+    <>
+      <input type="color" id="head" name="head" value="#e66465" />
+      <label htmlFor="head">Head</label>
+    </>
+  )
+}
+
+const Course29 = () => {
+  const liArr = ["A", "B", "C", "D", "E"]
+  return (
+    <ul>
+      {liArr.map((item, i) => (
+        <li key={i} className="p-1 my-4 max-w-xs border border-gray-300">{`カテゴリー${item}`}</li>
+      ))}
+    </ul>
+  )
+}
+
+const Course32 = () => {
+  return (
+    <div
+      className="block relative before:absolute after:absolute before:top-1/2 after:top-1/2 before:left-1/2 after:left-1/2
+    w-8 before:w-1 after:w-1 h-8 before:h-8 after:h-8 before:bg-gray-700 after:bg-gray-700 before:rotate-45 after:-rotate-45
+    before:translate-x-1/2 after:translate-x-1/2 before:translate-y-1/2 after:translate-y-1/2"
+    ></div>
+  )
+}
+
+const Course35 = () => {
+  return <div className="text-xl font-bold tracking-widest">この文字の間隔を空けましょう。</div>
+}
+
+const Course36 = () => {
+  return (
+    <p className="leading-10">
+      この文字の間隔を空けてみましょう
+      <br />
+      この文字の間隔を空けてみましょう
+      <br />
+      この文字の間隔を空けてみましょう
+      <br />
+    </p>
+  )
+}
+
+const Course37 = () => {
+  const liArr = ["A", "B", "C", "D"]
+  return (
+    <section>
+      {liArr.map((item, i) => {
+        if (i % 2 === 0) {
+          return <div>{`テキスト${item}`}</div>
+        } else {
+          return <p className="first-of-type:text-red-600">{`テキスト${item}`}</p>
+        }
+      })}
+    </section>
+  )
+}
+
+const Course39 = () => {
+  return (
+    <p className="text-2xl font-bold text-red-600" style={{ textShadow: "5px 5px 5px #000" }}>
+      この文字にテキストシャドーをつけてみよう
+    </p>
+  )
+}
+
+const Course40 = () => {
+  return <div className="p-12 w-[200px] h-[200px] text-xl text-white bg-black">要素の幅と高さは変わりません</div>
+}
+
+const Course41 = () => {
+  const liArr = [1, 2, 3, 4, 5, 6]
+  return (
+    <ul className="">
+      {liArr.map((item, i) => (
+        <li key={i} className={i > 2 ? "text-red-600" : ""}>
+          {`${item}番目の要素です`}
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+const Course43 = () => {
+  return (
+    <section className="flex flex-col">
+      <div className="order-2">これが2番目</div>
+      <div className="order-3">これが3番目</div>
+      <div className="order-1">これが1番目</div>
+    </section>
+  )
+}
+
+const Course44 = () => {
+  return (
+    <div className="overflow-y-auto m-auto w-[200px] h-24">
+      <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+    </div>
+  )
+}
+
+const Course45 = () => {
+  return (
+    <input type="text" placeholder="テキストボックスです" className="border border-gray-600 shadow-[0_3px_1px_rgba(0,_0,_0,_0.2)_inset]" />
+  )
+}
+
+const Course46 = () => {
+  return (
+    <div className="">
+      <p className="inline-block overflow-hidden w-[120px] h-12">テキストテキストテキストテキストテキストテキストテキストテキスト1</p>
+      <p className="inline-block overflow-hidden ml-8 w-[120px] h-12">テキストテキストテキストテキストテキストテキストテキストテキスト2</p>
+    </div>
+  )
+}
+
+const Course47 = () => {
+  return (
+    <div className="">
+      <p className="text-xl text-red-600 md:text-black">この文字の色をスマホ時に赤色に変えよう</p>
+    </div>
+  )
+}
+
+const Course48 = () => {
+  return (
+    <div className="">
+      <p className="text-xl text-red-600 md:text-green-600 lg:text-black">この文字の色をスマホ時に緑色/赤色に変えよう</p>
+    </div>
+  )
+}
+
+const Course49 = () => {
+  return (
+    <div className="mt-16 w-48 h-24 bg-red-600 rotate-45"></div>
+  )
+}
+
+const Course50 = () => {
+  return (
+    <>
+      <p className="mb-4">テスト１テスト１テスト１</p>
+      <p className="invisible mb-4">テスト２テスト２テスト２</p>
+      <p className="mb-4">テスト３テスト３テスト３</p>
+    </>
+  )
+}
+
+const Course51 = () => {
+  return (
+    <section className="grid grid-cols-2 gap-0 w-[400px]">
+      <div className="w-full h-24 bg-red-600"></div>
+      <div className="w-full h-24 bg-green-600"></div>
+      <div className="w-full h-24 bg-yellow-300"></div>
+      <div className="w-full h-24 bg-blue-600"></div>
+    </section>
+  )
+}
+
+const Course52 = () => {
+  return (
+    <div className="overflow-y-auto m-auto w-[200px] h-24" style={{ scrollbarColor: "yello blue"}}>
+      <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+    </div>
+  )
+}
+
+// 忍者Codeのテストページ
 const Ninja: NextPage = () => {
   return (
     <>
@@ -261,7 +468,7 @@ const Ninja: NextPage = () => {
       </Head>
 
       <div className="container m-8">
-        <Course20 />
+        <Course52 />
       </div>
     </>
   )
