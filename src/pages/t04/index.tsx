@@ -10,7 +10,6 @@ const T04Index: NextPage = () => {
     { href: "#", name: "Twitter" },
     { href: "#", name: "Facebook" },
   ]
-  const origin = typeof window !== "undefined" && window.location.origin ? window.location.origin : ""
 
   return (
     <>
@@ -19,7 +18,7 @@ const T04Index: NextPage = () => {
         <meta name="description" content="レシピサイト練習ページ" />
         <meta property="og:title" content="Recipe Diary" />
         <meta property="og:description" content="レシピサイト練習ページ" />
-        <meta property="og:image" content={`${origin}/img/t04/summary.jpg`} />
+        <meta property="og:image" content="https://tailwind-lp-collection.vercel.app/img/t04/summary.jpg" />
         <meta name="twitter:card" content="summary" />
         <link rel="icon" href="/img/t04/favicon.ico" />
       </Head>
