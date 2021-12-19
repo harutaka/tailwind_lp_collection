@@ -1,13 +1,21 @@
 import type { NextPage } from "next"
 import Head from "next/head"
 import Image from "next/image"
+import Link from "next/link"
 
 const T04Index: NextPage = () => {
   const imgArr = ["/img/t04/recipe1.jpg", "/img/t04/recipe2.jpg", "/img/t04/recipe3.jpg"]
+  const snsArr = [
+    { href: "#", name: "Instagram" },
+    { href: "#", name: "Twitter" },
+    { href: "#", name: "Facebook" },
+  ]
+
   return (
     <>
       <Head>
         <title>Recipe Diary</title>
+        <link rel="icon" href="/img/t04/favicon.ico" />
       </Head>
 
       <div className="bg-gray-100">
@@ -27,13 +35,32 @@ const T04Index: NextPage = () => {
             </p>
           </div>
 
-          <ul className="flex my-[60px]">
+          <ul className="md:flex my-[60px]">
             {imgArr.map((item, i) => (
-              <li className="relative w-1/3 h-[500px]" key={i}>
+              <li className="relative md:w-1/3 h-[500px]" key={i}>
                 <Image src={item} alt="" layout="fill" objectFit="cover" />
               </li>
             ))}
           </ul>
+
+          <div className="py-0 px-5 mb-20 text-center">
+            <Link href="#">
+              <a className="inline-block py-3 px-14 text-sm no-underline border border-gray-800">レシピ一覧を見る</a>
+            </Link>
+          </div>
+
+          <footer className="p-5 text-xs text-center">
+            <ul className="flex justify-center mb-5">
+              {snsArr.map((item, i) => (
+                <li key={i} className="my-0 mx-2.5 underline">
+                  <Link href={item.href}>
+                    <a>{item.name}</a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <p>&copy; 2021 Recipe Diary</p>
+          </footer>
         </main>
       </div>
     </>
