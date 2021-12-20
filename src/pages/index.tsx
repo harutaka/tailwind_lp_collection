@@ -49,6 +49,13 @@ const Home: NextPage = () => {
           <div className="flex flex-wrap -m-4">
             {/* 各LPカードここから */}
             <LpCard
+              href="/t06/"
+              imgSrc="/img/t06/summary.jpg"
+              title="Wooden Jewelry"
+              description="ブランドサイト練習ページ"
+            />
+
+            <LpCard
               href="/t05/"
               imgSrc="/img/t05/summary.jpg"
               title="Recipe Diary2"
