@@ -1,6 +1,33 @@
 import type { NextPage } from "next"
 import Head from "next/head"
 import Image from "next/image"
+import Link from "next/link"
+
+type LpCardProps = {
+  href: string
+  imgSrc: string
+  title: string
+  description: string
+}
+const LpCard = ({ href, imgSrc, title, description }: LpCardProps) => {
+  return (
+    <div className="p-4 md:w-1/3">
+      <Link href={href}>
+        <a>
+          <div className="overflow-hidden h-full rounded-lg border-2 border-gray-300 border-opacity-60 hover:opacity-75">
+            <div className="relative w-full md:h-36 lg:h-48">
+              <Image src={imgSrc} alt="profile" layout="fill" objectFit="cover" />
+            </div>
+            <div className="p-6">
+              <h1 className="mb-3 text-lg font-medium text-gray-900">{title}</h1>
+              <p className="mb-3 leading-relaxed">{description}</p>
+            </div>
+          </div>
+        </a>
+      </Link>
+    </div>
+  )
+}
 
 const Home: NextPage = () => {
   return (
@@ -21,65 +48,40 @@ const Home: NextPage = () => {
         <div className="container py-12 px-5 mx-auto">
           <div className="flex flex-wrap -m-4">
             {/* 各LPカードここから */}
-            <div className="p-4 md:w-1/3">
-              <div className="overflow-hidden h-full rounded-lg border-2 border-gray-300 border-opacity-60">
-                <div className="relative w-full md:h-36 lg:h-48">
-                  <Image src="/img/t05/summary.jpg" alt="profile" layout="fill" objectFit="cover" />
-                </div>
-                <div className="p-6">
-                  <h1 className="mb-3 text-lg font-medium text-gray-900">Recipe Diary2</h1>
-                  <p className="mb-3 leading-relaxed">レシピサイト練習ページ2</p>
-                </div>
-              </div>
-            </div>
+            <LpCard
+              href="/t05/"
+              imgSrc="/img/t05/summary.jpg"
+              title="Recipe Diary2"
+              description="レシピサイト練習ページ2"
+            />
 
-            <div className="p-4 md:w-1/3">
-              <div className="overflow-hidden h-full rounded-lg border-2 border-gray-300 border-opacity-60">
-                <div className="relative w-full md:h-36 lg:h-48">
-                  <Image src="/img/t04/summary.jpg" alt="profile" layout="fill" objectFit="cover" />
-                </div>
-                <div className="p-6">
-                  <h1 className="mb-3 text-lg font-medium text-gray-900">Recipe Diary</h1>
-                  <p className="mb-3 leading-relaxed">レシピサイト練習ページ</p>
-                </div>
-              </div>
-            </div>
+            <LpCard
+              href="/t04/"
+              imgSrc="/img/t04/summary.jpg"
+              title="Recipe Diary"
+              description="レシピサイト練習ページ1"
+            />
 
-            <div className="p-4 md:w-1/3">
-              <div className="overflow-hidden h-full rounded-lg border-2 border-gray-300 border-opacity-60">
-                <div className="relative w-full md:h-36 lg:h-48">
-                  <Image src="/img/t03/summary.jpg" alt="profile" layout="fill" objectFit="cover" />
-                </div>
-                <div className="p-6">
-                  <h1 className="mb-3 text-lg font-medium text-gray-900">PHOTO BOOK 2</h1>
-                  <p className="mb-3 leading-relaxed">フォトサイト練習ページ2</p>
-                </div>
-              </div>
-            </div>
+            <LpCard
+              href="/t03/"
+              imgSrc="/img/t03/summary.jpg"
+              title="PHOTO BOOK 2"
+              description="フォトサイト練習ページ2"
+            />
 
-            <div className="p-4 md:w-1/3">
-              <div className="overflow-hidden h-full rounded-lg border-2 border-gray-300 border-opacity-60">
-                <div className="relative w-full md:h-36 lg:h-48">
-                  <Image src="/img/t02/summary.jpg" alt="profile" layout="fill" objectFit="cover" />
-                </div>
-                <div className="p-6">
-                  <h1 className="mb-3 text-lg font-medium text-gray-900">PHOTO BOOK</h1>
-                  <p className="mb-3 leading-relaxed">フォトサイト練習ページ</p>
-                </div>
-              </div>
-            </div>
+            <LpCard
+              href="/t02/"
+              imgSrc="/img/t02/summary.jpg"
+              title="PHOTO BOOK"
+              description="レシピサイト練習ページ"
+            />
 
-            <div className="p-4 md:w-1/3">
-              <div className="overflow-hidden h-full rounded-lg border-2 border-gray-300 border-opacity-60">
-                <div className="relative w-full md:h-36 lg:h-48">
-                  <Image src="/img/t01/summary.jpg" alt="profile" layout="fill" objectFit="cover" />
-                </div>
-                <div className="p-6">
-                  <h1 className="mb-3 text-lg font-medium text-gray-900">Profile</h1>
-                  <p className="mb-3 leading-relaxed">プロフィールサイト練習ページ</p>
-                </div>
-              </div>
-            </div>
+            <LpCard
+              href="/t01/"
+              imgSrc="/img/t01/summary.jpg"
+              title="Profile"
+              description="プロフィールサイト練習ページ"
+            />
           </div>
         </div>
       </section>
