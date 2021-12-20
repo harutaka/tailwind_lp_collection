@@ -85,6 +85,20 @@ const Home: NextPage = () => {
           </div>
         </div>
       </section>
+
+      <footer>
+        <p className="py-4 mx-auto text-xs text-center">
+          © 2021 Harutaka —
+          <a
+            href="https://twitter.com/harutaka_ini"
+            className="ml-1 text-gray-600 hover:opacity-75"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @harutaka_ini
+          </a>
+        </p>
+      </footer>
     </div>
   )
 }
