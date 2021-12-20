@@ -14,6 +14,11 @@ const T05Index: NextPage = () => {
     <>
       <Head>
         <title>Recipe Diary</title>
+        <meta name="description" content="レシピサイト練習ページ" />
+        <meta property="og:title" content="Recipe Diary" />
+        <meta property="og:description" content="レシピサイト練習ページ" />
+        <meta property="og:image" content="https://tailwind-lp-collection.vercel.app/img/t05/summary.jpg" />
+        <meta name="twitter:card" content="summary" />
         <link rel="icon" href="/img/t05/favicon.ico" />
       </Head>
 

@@ -10,6 +10,11 @@ const T01Index: NextPage = () => {
     <>
       <Head>
         <title>Profile</title>
+        <meta name="description" content="プロフィールサイト練習ページ" />
+        <meta property="og:title" content="Profile" />
+        <meta property="og:description" content="プロフィールサイト練習ページ" />
+        <meta property="og:image" content="https://tailwind-lp-collection.vercel.app/img/t01/summary.jpg" />
+        <meta name="twitter:card" content="summary" />
       </Head>
 
       <header

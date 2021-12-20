@@ -7,6 +7,11 @@ const T03Index: NextPage = () => {
     <>
       <Head>
         <title>PHOTO BOOK2</title>
+        <meta name="description" content="フォトサイト練習ページ" />
+        <meta property="og:title" content="PHOTO BOOK2" />
+        <meta property="og:description" content="フォトサイト練習ページ" />
+        <meta property="og:image" content="https://tailwind-lp-collection.vercel.app/img/t03/summary.jpg" />
+        <meta name="twitter:card" content="summary" />
       </Head>
 
       <body className="font-meiryo">
