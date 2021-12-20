@@ -34,6 +34,11 @@ const Home: NextPage = () => {
     <div className="py-2 min-h-screen bg-gray-50">
       <Head>
         <title>ランディングページの練習一覧</title>
+        <meta name="description" content="これまで制作した練習ページの一覧です" />
+        <meta property="og:title" content="ランディングページの練習一覧" />
+        <meta property="og:description" content="これまで制作した練習ページの一覧です" />
+        <meta property="og:image" content="https://tailwind-lp-collection.vercel.app/summary.jpg" />
+        <meta name="twitter:card" content="summary" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
