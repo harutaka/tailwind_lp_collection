@@ -38,7 +38,7 @@ const T07Index: NextPage = () => {
         <meta property="og:description" content="ポートフォリオサイト練習ページ" />
         <meta property="og:image" content="https://tailwind-lp-collection.vercel.app/img/t07/summary.jpg" />
         <meta name="twitter:card" content="summary" />
-        <link rel="icon" href="/img/t06/favicon.ico" />
+        <link rel="icon" href="/img/t08/favicon.ico" />
       </Head>
 
       <header className="md:flex justify-between items-end py-4 md:py-28 px-[4%] mx-auto md:max-w-[960px]">
