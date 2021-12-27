@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         meiryo: ["メイリオ"],
+        noto: ["Noto Sans JP", "sans-serif"]
       },
     },
   },
