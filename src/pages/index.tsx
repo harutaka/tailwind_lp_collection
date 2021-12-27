@@ -53,6 +53,13 @@ const Home: NextPage = () => {
         <div className="container py-12 px-5 mx-auto">
           <div className="flex flex-wrap -m-4">
             {/* 各LPカードここから */}
+            <LpCard
+              href="/t12/"
+              imgSrc="/img/t12/summary.jpg"
+              title="Furniture Design"
+              description="ストアサイト練習ページ"
+            />
+
             <LpCard href="/t11/" imgSrc="/img/t11/summary.jpg" title="COFFEE" description="カフェサイト練習ページ" />
 
             <LpCard

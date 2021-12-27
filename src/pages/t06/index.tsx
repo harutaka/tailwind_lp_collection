@@ -80,7 +80,7 @@ const T06Index: NextPage = () => {
             <div className="w-[110px]">
               <Image src="/img/t06/logo.svg" alt="Wooden Jewelry" width={1000} height={140} />
             </div>
-            <p>&copy; 2021 Wooden Jewelry</p>
+            <p>&copy; 2021 Harutaka</p>
           </footer>
         </main>
       </div>

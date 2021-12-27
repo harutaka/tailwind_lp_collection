@@ -188,7 +188,7 @@ const T10Index: NextPage = () => {
               <p>T/99-9999-9999</p>
             </div>
           </div>
-          <p className="text-xs">&copy; Web Entertainment Design Inc.</p>
+          <p className="text-xs">&copy; Harutaka</p>
         </div>
       </footer>
     </div>

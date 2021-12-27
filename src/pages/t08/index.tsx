@@ -174,7 +174,7 @@ const T08Index: NextPage = () => {
             </p>
           </div>
         </div>
-        <p className="py-8 text-center bg-white">&copy; Mag88</p>
+        <p className="py-8 text-center bg-white">&copy; Harutaka</p>
       </footer>
     </div>
   )

@@ -163,7 +163,7 @@ const T11Index: NextPage = () => {
       </main>
 
       <footer id="footer" className="py-2.5 text-xs text-center">
-        <p>&copy; COFFEE</p>
+        <p>&copy; Harutka</p>
       </footer>
     </div>
   )

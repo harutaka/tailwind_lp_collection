@@ -77,7 +77,7 @@ const T05Index: NextPage = () => {
               </li>
             ))}
           </ul>
-          <p>&copy; 2021 Recipe Diary</p>
+          <p>&copy; 2021 Harutaka</p>
         </footer>
       </main>
     </div>

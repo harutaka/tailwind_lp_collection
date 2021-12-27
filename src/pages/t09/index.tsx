@@ -154,7 +154,7 @@ const T09Index: NextPage = () => {
       </main>
 
       <footer id="footer" className="py-2.5 mx-auto max-w-[800px]">
-        <p className="text-[10px] text-center">&copy; TOTALLY</p>
+        <p className="text-[10px] text-center">&copy; Harutaka</p>
       </footer>
     </div>
   )

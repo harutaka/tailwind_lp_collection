@@ -165,7 +165,7 @@ const T07Index: NextPage = () => {
         </section>
       </main>
 
-      <footer className="py-2 mt-32 text-xs text-center text-white bg-gray-800">&copy; 2020 My Work</footer>
+      <footer className="py-2 mt-32 text-xs text-center text-white bg-gray-800">&copy; 2021 Harutaka</footer>
     </div>
   )
 }

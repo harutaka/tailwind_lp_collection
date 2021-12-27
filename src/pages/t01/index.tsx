@@ -95,7 +95,7 @@ const T01Index: NextPage = () => {
       </main>
 
       <footer id="footer" className="py-2.5 px-0 text-[0.5rem] text-center">
-        <p>&copy; 2020 Profile</p>
+        <p>&copy; 2021 Harutaka</p>
       </footer>
     </>
   )

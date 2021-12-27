@@ -68,7 +68,7 @@ const T03Index: NextPage = () => {
           </div>
         </section>
 
-        <footer className="mx-auto mt-20 mb-4 text-[10px] text-center">© 2021 PHOTO BOOK 2</footer>
+        <footer className="mx-auto mt-20 mb-4 text-[10px] text-center">© 2021 Harutaka</footer>
       </main>
     </div>
   )

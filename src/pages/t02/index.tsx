@@ -71,7 +71,7 @@ const T02Index: NextPage = () => {
           </div>
         </section>
 
-        <footer className="py-4 mx-auto w-[600px] text-[10px]">© 2020 PHOTO BOOK</footer>
+        <footer className="py-4 mx-auto w-[600px] text-[10px]">© 2021 Harutaka</footer>
       </main>
     </div>
   )
