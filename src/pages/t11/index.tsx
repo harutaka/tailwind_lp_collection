@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-contradicting-classname */
 /* eslint-disable tailwindcss/no-custom-classname */
 import type { NextPage } from "next"
 import Head from "next/head"
@@ -33,14 +34,14 @@ const T11Index: NextPage = () => {
 
       <header
         id="header"
-        className="relative py-5 px-10 w-full min-h-screen bg-center bg-no-repeat bg-cover bg-[url('/img/t11/mainvisual.jpg')]"
+        className="relative py-5 px-10 w-full min-h-screen bg-center bg-[url('/img/t11/mainvisual.jpg')] bg-no-repeat bg-cover"
       >
         <nav>
           <ul className="flex justify-end">
             {navArr.map((item, i) => (
               <li key={i} className="ml-8">
                 <Link href={item.href}>
-                  <a className="font-bold text-white hover:text-red-500 duration-300 drop-shadow-[1px_1px_2px_#121212]">
+                  <a className="font-bold text-white hover:text-red-500 drop-shadow-[1px_1px_2px_#121212] duration-300">
                     {item.title}
                   </a>
                 </Link>
@@ -48,22 +49,22 @@ const T11Index: NextPage = () => {
             ))}
           </ul>
         </nav>
-        <h1 className="absolute top-[42%] md:top-[45%] right-0 left-0 px-4 text-center drop-shadow-[1px_1px_10px_#c0c0c0]">
+        <h1 className="absolute top-[42%] right-0 left-0 px-4 text-center drop-shadow-[1px_1px_10px_#c0c0c0] md:top-[45%]">
           <Image src="/img/t11/logo.svg" alt="COFFEE" width={460} height={100} />
         </h1>
       </header>
 
       <main>
         <section id="menu" className="mt-2.5 md:mt-5">
-          <div className="relative h-[94px] md:h-[300px] bg-scroll md:bg-fixed bg-center bg-cover bg-[url('/img/t11/menu.jpg')]">
-            <h2 className="absolute top-[26%] md:top-[30%] w-full text-[2rem] md:text-[4.5rem] font-bold text-center text-white drop-shadow-[1px_1px_10px_#c0c0c0]">
+          <div className="relative h-[94px] bg-scroll bg-center bg-[url('/img/t11/menu.jpg')] bg-cover md:h-[300px] md:bg-fixed">
+            <h2 className="absolute top-[26%] w-full text-[2rem] font-bold text-center text-white drop-shadow-[1px_1px_10px_#c0c0c0] md:top-[30%] md:text-[4.5rem]">
               MENU
             </h2>
           </div>
 
-          <div className="md:flex px-4 pt-[30px] md:pt-[90px] pb-[60px] md:pb-[150px] mx-auto max-w-5xl text-center">
-            <div className="px-[45px] md:w-1/2 md:border-r border-black">
-              <h3 className="inline-block mb-6 md:mb-16 text-xl md:text-[2.5rem] font-bold leading-relaxed border-b-[6px] border-red-500">
+          <div className="px-4 pt-[30px] pb-[60px] mx-auto max-w-5xl text-center md:flex md:pt-[90px] md:pb-[150px]">
+            <div className="px-[45px] border-black md:w-1/2 md:border-r">
+              <h3 className="inline-block mb-6 text-xl font-bold leading-relaxed border-b-[6px] border-red-500 md:mb-16 md:text-[2.5rem]">
                 COFFEE
               </h3>
               <dl className="flex flex-wrap mb-2.5 md:mb-0">
@@ -73,7 +74,7 @@ const T11Index: NextPage = () => {
               </dl>
             </div>
             <div className="px-[45px] md:w-1/2">
-              <h3 className="inline-block mb-6 md:mb-16 text-xl md:text-[2.5rem] font-bold leading-relaxed border-b-[6px] border-red-500">
+              <h3 className="inline-block mb-6 text-xl font-bold leading-relaxed border-b-[6px] border-red-500 md:mb-16 md:text-[2.5rem]">
                 FOOD
               </h3>
               <dl className="flex flex-wrap mb-2.5 md:mb-0">
@@ -81,7 +82,7 @@ const T11Index: NextPage = () => {
                   <MenuItem key={i} />
                 ))}
               </dl>
-              <h3 className="inline-block mb-6 md:mb-16 text-xl md:text-[2.5rem] font-bold leading-relaxed border-b-[6px] border-red-500">
+              <h3 className="inline-block mb-6 text-xl font-bold leading-relaxed border-b-[6px] border-red-500 md:mb-16 md:text-[2.5rem]">
                 OTHER
               </h3>
               <dl className="flex flex-wrap">
@@ -94,20 +95,20 @@ const T11Index: NextPage = () => {
         </section>
 
         <section id="about" className="mt-5">
-          <div className="relative h-[94px] md:h-[300px] bg-scroll md:bg-fixed bg-center bg-cover bg-[url('/img/t11/about.jpg')]">
-            <h2 className="absolute top-[26%] md:top-[30%] w-full text-[2rem] md:text-[4.5rem] font-bold text-center text-white drop-shadow-[1px_1px_10px_#c0c0c0]">
+          <div className="relative h-[94px] bg-scroll bg-center bg-[url('/img/t11/about.jpg')] bg-cover md:h-[300px] md:bg-fixed">
+            <h2 className="absolute top-[26%] w-full text-[2rem] font-bold text-center text-white drop-shadow-[1px_1px_10px_#c0c0c0] md:top-[30%] md:text-[4.5rem]">
               ABOUT
             </h2>
           </div>
 
-          <div className="px-4 pt-[30px] md:pt-[90px] pb-[60px] md:pb-[150px] mx-auto max-w-5xl text-center about-content">
+          <div className="px-4 pt-[30px] pb-[60px] mx-auto max-w-5xl text-center md:pt-[90px] md:pb-[150px] about-content">
             <div className="about-item">
-              <h3 className="inline-block mb-6 md:mb-16 text-xl md:text-[2.5rem] font-bold leading-relaxed border-b-[6px] border-red-500">
+              <h3 className="inline-block mb-6 text-xl font-bold leading-relaxed border-b-[6px] border-red-500 md:mb-16 md:text-[2.5rem]">
                 COFFEE
               </h3>
-              <ul className="md:flex flex-wrap justify-between mb-10">
+              <ul className="flex-wrap justify-between mb-10 md:flex">
                 {[...Array(4)].map((_, i) => (
-                  <li key={i} className="p-[2%] md:w-1/2 leading-loose text-left">
+                  <li key={i} className="p-[2%] leading-loose text-left md:w-1/2">
                     テキストテキストテキストテキストテキストテキストテキストテキスト
                     テキストテキストテキストテキストテキストテキストテキストテキスト
                     テキストテキストテキストテキストテキストテキストテキストテキスト
@@ -127,15 +128,15 @@ const T11Index: NextPage = () => {
         </section>
 
         <section id="location" className="mt-5">
-          <div className="relative h-[94px] md:h-[300px] bg-scroll md:bg-fixed bg-center bg-cover bg-[url('/img/t11/location.jpg')]">
-            <h2 className="absolute top-[26%] md:top-[30%] w-full text-[2rem] md:text-[4.5rem] font-bold text-center text-white drop-shadow-[1px_1px_10px_#c0c0c0]">
+          <div className="relative h-[94px] bg-scroll bg-center bg-[url('/img/t11/location.jpg')] bg-cover md:h-[300px] md:bg-fixed">
+            <h2 className="absolute top-[26%] w-full text-[2rem] font-bold text-center text-white drop-shadow-[1px_1px_10px_#c0c0c0] md:top-[30%] md:text-[4.5rem]">
               LOCATION
             </h2>
           </div>
 
-          <div className="px-4 pt-[30px] md:pt-[90px] pb-[60px] md:pb-[150px] mx-auto max-w-5xl text-center location-content">
+          <div className="px-4 pt-[30px] pb-[60px] mx-auto max-w-5xl text-center md:pt-[90px] md:pb-[150px] location-content">
             <div className="location-item">
-              <h3 className="inline-block mb-6 md:mb-16 text-xl md:text-[2.5rem] font-bold leading-relaxed border-b-[6px] border-red-500">
+              <h3 className="inline-block mb-6 text-xl font-bold leading-relaxed border-b-[6px] border-red-500 md:mb-16 md:text-[2.5rem]">
                 OUR STORE
               </h3>
               <div className="mb-5 grayscale">
