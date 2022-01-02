@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-contradicting-classname */
 /* eslint-disable @next/next/google-font-display */
 /* eslint-disable tailwindcss/no-custom-classname */
 /* eslint-disable @next/next/no-page-custom-font */
@@ -40,14 +41,14 @@ const S01Index: NextPage = () => {
         <link rel="icon" href="/img/s01/favicon.ico" />
       </Head>
 
-      <header className="relative pt-12 h-screen min-h-[660px] text-center bg-center md:bg-bottom md:bg-no-repeat bg-cover bg-[url('/img/s01/bg_header_pink_sp.jpg')] md:bg-[url('/img/s01/bg_header_pink.jpg')]">
-        <div className="my-4 mx-auto md:mt-[15vh] w-[131px] h-[116px] bg-center bg-no-repeat bg-contain duration-200 bg-[url('/img/s01/header_logo.png')]"></div>
+      <header className="relative pt-12 h-screen min-h-[660px] text-center bg-center bg-[url('/img/s01/bg_header_pink_sp.jpg')] bg-cover md:bg-bottom md:bg-[url('/img/s01/bg_header_pink.jpg')] md:bg-no-repeat">
+        <div className="my-4 mx-auto w-[131px] h-[116px] bg-center bg-[url('/img/s01/header_logo.png')] bg-no-repeat bg-contain duration-200 md:mt-[15vh]"></div>
 
-        <div className="pb-6 mx-auto mt-4 md:mt-6 md:text-xl md:font-normal text-white duration-200">
+        <div className="pb-6 mx-auto mt-4 text-white duration-200 md:mt-6 md:text-xl md:font-normal">
           かわいいが届くお花便
         </div>
 
-        <div className="absolute right-0 bottom-6 left-0 pt-[260px] md:pt-6 mx-auto text-center duration-200">
+        <div className="absolute right-0 bottom-6 left-0 pt-[260px] mx-auto text-center duration-200 md:pt-6">
           <div className="py-6 px-4 w-full">
             <div className="flex justify-center">
               <Link href="#">
@@ -95,18 +96,18 @@ const S01Index: NextPage = () => {
       <section className="text-center">
         <div className="flex flex-wrap ">
           {/* item price */}
-          <div className="flex-grow py-[16%] md:py-16 px-[6%] bg-gray-100 basis-96">
+          <div className="basis-96 grow py-[16%] px-[6%] bg-gray-100 md:py-16">
             <h2 className="mb-4 text-xl text-gray-800">
               お部屋に飾りやすいサイズの
               <br />
               ブーケを気軽に
             </h2>
-            <div className="mx-auto md:w-[400px] max-w-[400px]">
+            <div className="mx-auto max-w-[400px] md:w-[400px]">
               {/* content */}
               <div className="flex flex-col mb-4">
                 {/* bouquet */}
-                <div className="relative mx-0 mt-6 mb-2 bg-center bg-no-repeat basis-[200px] bg-[url('/img/s01/price_bouquetimg.png')] bg-[length:200px_200px]">
-                  <div className="absolute -top-6 right-0 left-0 mx-auto w-32 h-12 bg-center bg-cover bg-[url('/img/s01/price_trial.png')]"></div>
+                <div className="relative basis-[200px] mx-0 mt-6 mb-2 bg-center bg-[url('/img/s01/price_bouquetimg.png')] bg-no-repeat bg-[length:200px_200px]">
+                  <div className="absolute -top-6 right-0 left-0 mx-auto w-32 h-12 bg-center bg-[url('/img/s01/price_trial.png')] bg-cover"></div>
                 </div>
                 {/* bouquet_price */}
                 <div className="my-4 mx-auto font-bold">
@@ -125,7 +126,7 @@ const S01Index: NextPage = () => {
           </div>
 
           {/* item frequency */}
-          <div className="flex-grow py-[16%] md:py-16 px-[6%] m-auto md:mx-6 bg-white basis-96">
+          <div className="basis-96 grow py-[16%] px-[6%] m-auto bg-white md:py-16 md:mx-6">
             <h2 className="mb-4 text-xl text-gray-800">
               月に2回の注文で、
               <br />
@@ -138,13 +139,13 @@ const S01Index: NextPage = () => {
         </div>
       </section>
 
-      <section className="block py-[16%] md:py-0 px-[6%] bg-[#ead5dc]">
-        <div className="flex flex-col md:flex-wrap flex-grow h-[730px]">
-          <div className="flex-grow md:order-2 md:mt-[140px] mb-6 md:w-1/2 max-h-fit">
+      <section className="block py-[16%] px-[6%] bg-[#ead5dc] md:py-0">
+        <div className="flex flex-col grow h-[730px] md:flex-wrap">
+          <div className="grow mb-6 max-h-fit md:order-2 md:mt-[140px] md:w-1/2">
             <h2 className="text-2xl text-center">どんなお花が届くの？</h2>
           </div>
-          <div className="md:order-1 mx-auto w-1/2 h-[730px] bg-center bg-no-repeat bg-contain bg-[url('/img/s01/bg_flower.jpg')]"></div>
-          <div className="flex-grow md:order-3 mx-auto max-w-[400px]">
+          <div className="mx-auto w-1/2 h-[730px] bg-center bg-[url('/img/s01/bg_flower.jpg')] bg-no-repeat bg-contain md:order-1"></div>
+          <div className="grow mx-auto max-w-[400px] md:order-3">
             <h3 className="mt-6 mb-4 text-2xl text-center">かわいいお花だけ</h3>
             <p>
               色やサイズなど、かわいくおしゃれに飾れるお花にこだわってセレクト。季節やトレンドに合わせてブーケを作っています。
@@ -157,10 +158,10 @@ const S01Index: NextPage = () => {
         </div>
       </section>
 
-      <section className="pt-[16%] md:pt-[10%] bg-[#e7e3df]">
-        <div className="flex flex-col md:flex-wrap h-[980px] md:h-[730px]">
+      <section className="pt-[16%] bg-[#e7e3df] md:pt-[10%]">
+        <div className="flex flex-col h-[980px] md:flex-wrap md:h-[730px]">
           {/* item title */}
-          <div className="flex-grow md:order-1 md:w-1/2 max-h-fit">
+          <div className="grow max-h-fit md:order-1 md:w-1/2">
             <h2 className="text-2xl text-center">
               かんたん、かわいい
               <br />
@@ -172,21 +173,21 @@ const S01Index: NextPage = () => {
           </div>
 
           {/* item img */}
-          <div className="md:order-3 mx-auto w-1/2 h-[730px] bg-bottom bg-no-repeat bg-contain md:bg-cover bg-[url('/img/s01/bg_vase.jpg')]"></div>
+          <div className="mx-auto w-1/2 h-[730px] bg-bottom bg-[url('/img/s01/bg_vase.jpg')] bg-no-repeat bg-contain md:order-3 md:bg-cover"></div>
 
           {/* item body */}
-          <div className="flex-grow md:order-2 md:p-0 py-[2%] px-[6%] mx-auto md:mt-8 md:w-[400px] max-w-[400px]">
+          <div className="grow py-[2%] px-[6%] mx-auto max-w-[400px] md:order-2 md:p-0 md:mt-8 md:w-[400px]">
             <p>
               お花を飾るのに欠かせないのが花器。でも、お花と花器の相性もさまざま。手持ちにぴったりのものがなくて、いまいちかわいく飾れない…なんてことも。そこで、誰でもかんたんに、かわいくお花を飾れる専用の花器をつくりました。お花のある暮らしが、もっと楽しみになりますように。
             </p>
             <div className="flex justify-between my-6 mx-auto">
-              <div className="relative flex-grow max-w-[98px] h-[116px] bg-cover bg-[url('/img/s01/vase_bell.jpg')]">
+              <div className="relative grow max-w-[98px] h-[116px] bg-[url('/img/s01/vase_bell.jpg')] bg-cover">
                 <p className="absolute right-0 bottom-1 left-0 m-auto text-sm text-center">bell</p>
               </div>
-              <div className="relative flex-grow max-w-[98px] h-[116px] bg-cover bg-[url('/img/s01/vase_moon.jpg')]">
+              <div className="relative grow max-w-[98px] h-[116px] bg-[url('/img/s01/vase_moon.jpg')] bg-cover">
                 <p className="absolute right-0 bottom-1 left-0 m-auto text-sm text-center">moon</p>
               </div>
-              <div className="relative flex-grow max-w-[98px] h-[116px] bg-cover bg-[url('/img/s01/vase_candle.jpg')]">
+              <div className="relative grow max-w-[98px] h-[116px] bg-[url('/img/s01/vase_candle.jpg')] bg-cover">
                 <p className="absolute right-0 bottom-1 left-0 m-auto text-sm text-center">candle</p>
               </div>
             </div>
@@ -206,14 +207,14 @@ const S01Index: NextPage = () => {
         </div>
       </section>
 
-      <section className="py-[16%] md:py-[12%] px-[4%] text-center">
+      <section className="py-[16%] px-[4%] text-center md:py-[12%]">
         <h2 className="text-2xl text-center">
           FLOWERだから続けられる、
           <br />
           お花のある暮らし
         </h2>
         <div className="flex flex-wrap">
-          <div className="flex-grow pt-20 mt-6 w-20 bg-top bg-no-repeat bg-[length:80px] basis-[223px] bg-[url('/img/s01/icon01.png')]">
+          <div className="basis-[223px] grow pt-20 mt-6 w-20 bg-top bg-[url('/img/s01/icon01.png')] bg-no-repeat bg-[length:80px]">
             <h3 className="mb-4 text-xl">お世話がかんたん</h3>
             <p className="text-sm">
               お花の栄養剤をセットでお届け。
@@ -221,7 +222,7 @@ const S01Index: NextPage = () => {
               こまめな水換えは不要です。
             </p>
           </div>
-          <div className="flex-grow pt-20 mt-6 w-20 bg-top bg-no-repeat bg-[length:80px] basis-[223px] bg-[url('/img/s01/icon02.png')]">
+          <div className="basis-[223px] grow pt-20 mt-6 w-20 bg-top bg-[url('/img/s01/icon02.png')] bg-no-repeat bg-[length:80px]">
             <h3 className="mb-4 text-xl">アプリがお知らせ</h3>
             <p className="text-sm">
               お花のお届けはアプリがお知らせ。
@@ -229,7 +230,7 @@ const S01Index: NextPage = () => {
               受け取り忘れの心配はありません。
             </p>
           </div>
-          <div className="flex-grow pt-20 mt-6 w-20 bg-top bg-no-repeat bg-[length:80px] basis-[223px] bg-[url('/img/s01/icon03.png')]">
+          <div className="basis-[223px] grow pt-20 mt-6 w-20 bg-top bg-[url('/img/s01/icon03.png')] bg-no-repeat bg-[length:80px]">
             <h3 className="mb-4 text-xl">安心の保証つき</h3>
             <p className="text-sm">
               万が一枯れたお花が届いても、
@@ -240,12 +241,12 @@ const S01Index: NextPage = () => {
         </div>
       </section>
 
-      <section className="md:px-[4%] pt-[16%] md:pt-0 md:h-[420px] text-center bg-[#efdfc5]">
-        <div className="flex flex-col md:flex-row flex-wrap">
-          <div className="z-10 md:order-2 pt-[76px] md:mt-[60px] h-[69px] bg-top bg-no-repeat md:-ml-[250px] bg-[length:118px] basis-[223px] bg-[url('/img/s01/logo_vertical_navy.png')]">
+      <section className="pt-[16%] text-center bg-[#efdfc5] md:px-[4%] md:pt-0 md:h-[420px]">
+        <div className="flex flex-col flex-wrap md:flex-row">
+          <div className="z-10 basis-[223px] pt-[76px] h-[69px] bg-top bg-[url('/img/s01/logo_vertical_navy.png')] bg-no-repeat bg-[length:118px] md:order-2 md:mt-[60px] md:-ml-[250px]">
             <h3 className="mt-4 ml-6">かわいいが届くお花便</h3>
           </div>
-          <div className="md:m-0 mx-auto -mt-10 w-[70%] h-[50%] md:h-[422px] min-h-[278px] bg-center bg-no-repeat bg-cover md:bg-contain bg-[url('/img/s01/bg_download2.jpg')] md-order-1 md:4/5"></div>
+          <div className="mx-auto -mt-10 w-[70%] h-[50%] min-h-[278px] bg-center bg-[url('/img/s01/bg_download2.jpg')] bg-no-repeat bg-cover md:m-0 md:h-[422px] md:bg-contain md-order-1 md:4/5"></div>
         </div>
       </section>
 
@@ -264,9 +265,9 @@ const S01Index: NextPage = () => {
             </div>
           </a>
         </Link>
-        <div className="flex flex-col md:flex-row mb-12 md:w-[90%]">
+        <div className="flex flex-col mb-12 md:flex-row md:w-[90%]">
           {footerArr.map((item, i) => (
-            <div key={i} className="flex-grow mb-4 md:basis-auto">
+            <div key={i} className="grow mb-4 md:basis-auto">
               <div className="text-sm">
                 <Link href="#">
                   <a>{item}</a>
@@ -280,7 +281,7 @@ const S01Index: NextPage = () => {
         </div>
       </section>
 
-      <div className="md:hidden fixed bottom-0 z-10 py-6 px-4 w-full h-[97px] bg-white/80 backdrop-blur">
+      <div className="fixed bottom-0 z-10 py-6 px-4 w-full h-[97px] bg-white/80 backdrop-blur md:hidden">
         <div className="flex justify-center">
           <Link href="#">
             <a>

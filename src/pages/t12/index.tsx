@@ -31,9 +31,7 @@ const T12Index: NextPage = () => {
         <div id="top" className="px-10 pt-20 pb-40 mx-auto w-full max-w-7xl">
           <ItemList total={8} start={1} />
           <Link href="/t12/product">
-          <a className="block text-center">
-            View More
-          </a>
+            <a className="block text-center">View More</a>
           </Link>
         </div>
       </main>

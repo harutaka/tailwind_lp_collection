@@ -11,11 +11,11 @@ const ItemDetailMain = ({ title, itemId }: ItemProps) => {
     <main>
       <div className="px-10 pt-28 pb-40 mx-auto w-full max-w-7xl">
         <h1 className="mb-8 text-lg font-bold">{title}</h1>
-        <div id="item" className="flex justify-between mb-16 w-[800px]">
-          <div className="w-1/2">
+        <div id="item" className="justify-between mb-16 md:flex md:w-[800px]">
+          <div className="mb-8 md:mb-0 md:w-1/2">
             <Image src={`/img/t12/${fileName}.jpg`} alt="" width={800} height={800} />
           </div>
-          <div className="w-[42%]">
+          <div className="md:w-[42%]">
             <p className="mb-8 text-justify">
               テキストテキストテキストテキストテキストテキストテキストテキストテキスト
               テキストテキストテキストテキストテキストテキストテキストテキストテキスト

@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-contradicting-classname */
 /* eslint-disable tailwindcss/no-custom-classname */
 import type { NextPage } from "next"
 import Head from "next/head"
@@ -17,7 +18,7 @@ const T08Index: NextPage = () => {
         <link rel="icon" href="/img/t08/favicon.ico" />
       </Head>
 
-      <header className="relative mb-20 h-screen bg-center bg-no-repeat bg-cover bg-[url('/img/t08/mainvisual.jpg')]">
+      <header className="relative mb-20 h-screen bg-center bg-[url('/img/t08/mainvisual.jpg')] bg-no-repeat bg-cover">
         <h1 className="absolute top-[30px] right-[30px]">
           <Image src="/img/t08/logo.svg" alt="Mag88" width={120} height={40} />
         </h1>
@@ -32,9 +33,9 @@ const T08Index: NextPage = () => {
             テキストテキストテキストテキストテキストテキストテキストテキスト
           </p>
 
-          <div className="md:flex flex-col md:flex-row justify-between mt-10">
+          <div className="flex-col justify-between mt-10 md:flex md:flex-row">
             <Link href="#">
-              <a className="block relative mb-[30px] md:mb-0 md:w-[49%] hover:opacity-70" href="#">
+              <a className="block relative mb-[30px] hover:opacity-70 md:mb-0 md:w-[49%]" href="#">
                 <Image
                   src="/img/t08/magazine-archive.jpg"
                   alt="テキストテキストテキストテキスト"
@@ -53,7 +54,7 @@ const T08Index: NextPage = () => {
             </Link>
 
             <Link href="#">
-              <a className="block relative md:w-[49%] hover:opacity-70" href="#">
+              <a className="block relative hover:opacity-70 md:w-[49%]" href="#">
                 <Image
                   src="/img/t08/magazine-new.jpg"
                   alt="テキストテキストテキストテキスト"
@@ -73,7 +74,7 @@ const T08Index: NextPage = () => {
           </div>
         </section>
 
-        <section className="pt-[35px] md:pt-14 mb-12 md:mb-20 h-[520px] text-center bg-center bg-no-repeat bg-cover bg-[url('/img/t08/fashion.jpg')]">
+        <section className="pt-[35px] mb-12 h-[520px] text-center bg-center bg-[url('/img/t08/fashion.jpg')] bg-no-repeat bg-cover md:pt-14 md:mb-20">
           <div className="px-[5%] mx-auto max-w-7xl">
             <h2 className="mb-5 text-2xl font-bold">Fashion & Style</h2>
             <p>
@@ -89,14 +90,14 @@ const T08Index: NextPage = () => {
           </div>
         </section>
 
-        <section className="py-7 md:py-[60px] bg-gray-50">
-          <div className="md:flex justify-between items-center px-[5%] mx-auto max-w-7xl">
-            <div className="md:w-[48%] text-center">
+        <section className="py-7 bg-gray-50 md:py-[60px]">
+          <div className="justify-between items-center px-[5%] mx-auto max-w-7xl md:flex">
+            <div className="text-center md:w-[48%]">
               <Image src="/img/t08/catalog.jpg" alt="catalog" width={1000} height={1000} />
             </div>
 
-            <div className="md:w-[48%] text-center">
-              <h2 className="mt-10 md:mt-0 mb-5 text-2xl font-bold">Catalog</h2>
+            <div className="text-center md:w-[48%]">
+              <h2 className="mt-10 mb-5 text-2xl font-bold md:mt-0">Catalog</h2>
               <p className="mb-16 md:mb-[30px]">
                 テキストテキストテキストテキストテキストテキストテキストテキストテキスト
                 テキストテキストテキストテキストテキストテキストテキストテキストテキスト
@@ -117,8 +118,8 @@ const T08Index: NextPage = () => {
         </section>
 
         <section className="py-[60px] bg-gray-50">
-          <div className="md:flex justify-between items-center px-[5%] mx-auto max-w-7xl">
-            <div className="md:w-[48%] text-center">
+          <div className="justify-between items-center px-[5%] mx-auto max-w-7xl md:flex">
+            <div className="text-center md:w-[48%]">
               <h2 className="mb-5 text-2xl font-bold">Antique</h2>
               <p className="mb-16 md:mb-[30px]">
                 テキストテキストテキストテキストテキストテキストテキストテキストテキスト
@@ -131,13 +132,13 @@ const T08Index: NextPage = () => {
                 テキストテキストテキストテキストテキストテキストテキストテキストテキスト
               </p>
               <Link href="#">
-                <a className="inline-block py-[14px] px-9 mt-7 mb-14 md:mb-0 text-xs text-gray-800 border border-gray-800 hover:opacity-70">
+                <a className="inline-block py-[14px] px-9 mt-7 mb-14 text-xs text-gray-800 border border-gray-800 hover:opacity-70 md:mb-0">
                   Read More
                 </a>
               </Link>
             </div>
 
-            <div className="md:w-[48%] text-center">
+            <div className="text-center md:w-[48%]">
               <Image src="/img/t08/antique.jpg" alt="antique" width={1000} height={1000} />
             </div>
           </div>
@@ -145,8 +146,8 @@ const T08Index: NextPage = () => {
       </main>
 
       <footer className="text-xs bg-[#333]">
-        <div className="md:flex justify-between py-7 md:py-24 px-[5%] mx-auto max-w-7xl text-white">
-          <div className="py-14 mb-7 md:mb-0 md:w-1/3 leading-loose text-center">
+        <div className="justify-between py-7 px-[5%] mx-auto max-w-7xl text-white md:flex md:py-24">
+          <div className="py-14 mb-7 leading-loose text-center md:mb-0 md:w-1/3">
             <Link href="/t08/">
               <a className="hover:opacity-70">
                 <Image src="/img/t08/logo.svg" alt="Mag88" width={120} height={40} />
@@ -154,7 +155,7 @@ const T08Index: NextPage = () => {
             </Link>
           </div>
 
-          <div className="mb-7 md:mb-0 md:w-1/3 leading-loose">
+          <div className="mb-7 leading-loose md:mb-0 md:w-1/3">
             <p className="mb-[10px] text-base font-bold">タイトル</p>
             <ul>
               {[...Array(5)].map((item, i) => (
@@ -165,7 +166,7 @@ const T08Index: NextPage = () => {
             </ul>
           </div>
 
-          <div className="mb-7 md:mb-0 md:w-1/3 leading-loose">
+          <div className="mb-7 leading-loose md:mb-0 md:w-1/3">
             <p className="mb-[10px] text-base font-bold">タイトルタイトルタイトル</p>
             <p>
               テキストテキストテキストテキストテキストテキストテキストテキストテキスト

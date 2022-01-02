@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer
       id="footer"
-      className="md:flex absolute right-0 bottom-5 left-0 justify-between px-10 mx-auto w-full max-w-7xl"
+      className="absolute right-0 bottom-5 left-0 justify-between px-10 mx-auto w-full max-w-7xl md:flex"
     >
       <ul className="flex mb-1 md:mb-0">
         {linkArr.map((item, i) => (

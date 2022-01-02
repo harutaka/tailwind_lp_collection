@@ -19,7 +19,7 @@ const T09Index: NextPage = () => {
         <link rel="icon" href="/img/t09/favicon.ico" />
       </Head>
 
-      <header className="px-4 md:px-0 pt-9 md:pt-11 pb-4 md:pb-6 mx-auto max-w-5xl">
+      <header className="px-4 pt-9 pb-4 mx-auto max-w-5xl md:px-0 md:pt-11 md:pb-6">
         <div className="mx-auto mb-9 w-[109px]">
           <Link href="index.html">
             <a className="block">
@@ -28,7 +28,7 @@ const T09Index: NextPage = () => {
           </Link>
         </div>
 
-        <nav className="flex overflow-x-scroll md:overflow-x-auto justify-between items-center mx-auto max-w-[800px]">
+        <nav className="flex overflow-x-scroll justify-between items-center mx-auto max-w-[800px] md:overflow-x-auto">
           <ul className="flex items-center">
             {headerLeftArr.map((item, i) => (
               <li key={i} className="mr-5">
@@ -51,13 +51,13 @@ const T09Index: NextPage = () => {
       </header>
 
       <main>
-        <div id="item" className="md:flex justify-between mx-auto mb-[100px] max-w-[800px]">
-          <div className="md:mr-[60px] mb-[10px] md:mb-0 max-w-full md:max-w-[400px] shrink-0">
+        <div id="item" className="justify-between mx-auto mb-[100px] max-w-[800px] md:flex">
+          <div className="shrink-0 mb-[10px] max-w-full md:mr-[60px] md:mb-0 md:max-w-[400px]">
             <Image src="/img/t09/item.jpg" alt="" width={800} height={1000} />
           </div>
 
           <div className="px-8">
-            <h1 className="flex items-center mb-5 h-[60px] text-base font-bold border-gray-300 border-y">
+            <h1 className="flex items-center mb-5 h-[60px] text-base font-bold border-y border-gray-300">
               TOTALLY Short Sleeve Shirt
             </h1>
             <p className="mb-[30px] leading-loose">

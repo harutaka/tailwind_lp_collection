@@ -41,7 +41,7 @@ const T07Index: NextPage = () => {
         <link rel="icon" href="/img/t08/favicon.ico" />
       </Head>
 
-      <header className="md:flex justify-between items-end py-4 md:py-28 px-[4%] mx-auto md:max-w-[960px]">
+      <header className="justify-between items-end py-4 px-[4%] mx-auto md:flex md:py-28 md:max-w-[960px]">
         <div className="text-center">
           <Image src="/img/t07/logo.svg" alt="logo" width={126} height={36} />
         </div>
@@ -64,10 +64,10 @@ const T07Index: NextPage = () => {
         </ul>
       </header>
 
-      <div className="hidden md:block relative w-full h-[420px]">
+      <div className="hidden relative w-full h-[420px] md:block">
         <Image src="/img/t07/mainvisual-pc.jpg" alt="mainvisual" layout="fill" objectFit="cover" />
       </div>
-      <div className="md:hidden relative w-full h-[420px]">
+      <div className="relative w-full h-[420px] md:hidden">
         <Image src="/img/t07/mainvisual-sp.jpg" alt="mainvisual" layout="fill" objectFit="cover" />
       </div>
 
@@ -97,7 +97,7 @@ const T07Index: NextPage = () => {
         <section className="my-28">
           <div className="my-16 text-2xl font-bold text-center">Works</div>
 
-          <div className="md:grid grid-cols-3 gap-x-8 mx-8">
+          <div className="grid-cols-3 gap-x-8 mx-8 md:grid">
             {worksArr.map((item, i) => (
               <WorksImage key={i} work={item} />
             ))}
@@ -110,7 +110,7 @@ const T07Index: NextPage = () => {
           {newsArr.map((item, i) => (
             <li
               key={i}
-              className="md:flex py-4 pl-4 mx-auto w-11/12 text-sm list-none border-t last:border-b border-t-gray-300"
+              className="py-4 pl-4 mx-auto w-11/12 text-sm list-none border-t last:border-b border-t-gray-300 md:flex"
             >
               <p className="md:pr-20">{item.date}</p>
               <p>{item.message}</p>

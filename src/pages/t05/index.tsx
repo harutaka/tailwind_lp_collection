@@ -23,8 +23,8 @@ const T05Index: NextPage = () => {
       </Head>
 
       <main>
-        <section className="md:flex mb-[60px]">
-          <div className="relative md:w-1/2 h-screen md:h-[700px]">
+        <section className="mb-[60px] md:flex">
+          <div className="relative h-screen md:w-1/2 md:h-[700px]">
             <Image src="/img/t05/recipe.jpg" alt="" layout="fill" objectFit="cover" />
           </div>
 

@@ -39,9 +39,9 @@ const T04Index: NextPage = () => {
           </p>
         </div>
 
-        <ul className="md:flex my-[60px]">
+        <ul className="my-[60px] md:flex">
           {imgArr.map((item, i) => (
-            <li className="relative md:w-1/3 h-[500px]" key={i}>
+            <li className="relative h-[500px] md:w-1/3" key={i}>
               <Image src={item} alt="" layout="fill" objectFit="cover" />
             </li>
           ))}

@@ -9,7 +9,7 @@ const Item1: NextPage = () => {
   const router = useRouter()
   const tempItemId = router.query.itemId || "item1"
   const itemId = Array.isArray(tempItemId) ? "item1" : tempItemId
-  
+
   return (
     <div className="relative min-h-screen bg-gray-100">
       <Head>

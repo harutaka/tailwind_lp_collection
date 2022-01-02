@@ -121,7 +121,7 @@ const Course10 = () => {
   return (
     <div className="p-3 w-[300px] border border-solid">
       <p className="pl-4 -indent-4">1.テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-      <p className="pl-4 break-words -indent-4">
+      <p className="pl-4 -indent-4 break-words">
         2.faseifjosafijojgaoigorjodjoaeojffaseifjosafijojgaoigorgaoigorjodjoaeojf
       </p>
     </div>
@@ -202,7 +202,7 @@ const Course17 = () => {
   const liArr = ["株式会社忍者Code", "東京都目黒区目黒1丁目1-1", "03-xxxx-xxxx"]
   return (
     <>
-      <ul className="inline-block border-black border-solid border-y">
+      <ul className="inline-block border-y border-black border-solid">
         {liArr.map((item, i) => (
           <li key={i} className="py-4 border-t first:border-t-0 border-black border-dotted">
             {item}
@@ -393,15 +393,23 @@ const Course44 = () => {
 
 const Course45 = () => {
   return (
-    <input type="text" placeholder="テキストボックスです" className="border border-gray-600 shadow-[0_3px_1px_rgba(0,_0,_0,_0.2)_inset]" />
+    <input
+      type="text"
+      placeholder="テキストボックスです"
+      className="border border-gray-600 shadow-[0_3px_1px_rgba(0,_0,_0,_0.2)_inset]"
+    />
   )
 }
 
 const Course46 = () => {
   return (
     <div className="">
-      <p className="inline-block overflow-hidden w-[120px] h-12">テキストテキストテキストテキストテキストテキストテキストテキスト1</p>
-      <p className="inline-block overflow-hidden ml-8 w-[120px] h-12">テキストテキストテキストテキストテキストテキストテキストテキスト2</p>
+      <p className="inline-block overflow-hidden w-[120px] h-12">
+        テキストテキストテキストテキストテキストテキストテキストテキスト1
+      </p>
+      <p className="inline-block overflow-hidden ml-8 w-[120px] h-12">
+        テキストテキストテキストテキストテキストテキストテキストテキスト2
+      </p>
     </div>
   )
 }
@@ -417,15 +425,15 @@ const Course47 = () => {
 const Course48 = () => {
   return (
     <div className="">
-      <p className="text-xl text-red-600 md:text-green-600 lg:text-black">この文字の色をスマホ時に緑色/赤色に変えよう</p>
+      <p className="text-xl text-red-600 md:text-green-600 lg:text-black">
+        この文字の色をスマホ時に緑色/赤色に変えよう
+      </p>
     </div>
   )
 }
 
 const Course49 = () => {
-  return (
-    <div className="mt-16 w-48 h-24 bg-red-600 rotate-45"></div>
-  )
+  return <div className="mt-16 w-48 h-24 bg-red-600 rotate-45"></div>
 }
 
 const Course50 = () => {
@@ -451,7 +459,7 @@ const Course51 = () => {
 
 const Course52 = () => {
   return (
-    <div className="overflow-y-auto m-auto w-[200px] h-24" style={{ scrollbarColor: "yello blue"}}>
+    <div className="overflow-y-auto m-auto w-[200px] h-24" style={{ scrollbarColor: "yello blue" }}>
       <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
       <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
       <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>

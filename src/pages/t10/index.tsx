@@ -5,7 +5,7 @@ import Link from "next/link"
 
 const NewsList = () => {
   return (
-    <li className="py-2.5 md:py-0 px-0 md:px-5 last:pr-0 first:pl-0 mb-5 last:mb-0 md:mb-0 w-1/3 border-r-0 last:border-r-0 md:border-r border-black">
+    <li className="py-2.5 px-0 last:pr-0 first:pl-0 mb-5 last:mb-0 w-1/3 border-r-0 last:border-r-0 border-black md:py-0 md:px-5 md:mb-0 md:border-r">
       <div className="mb-4">
         <time dateTime="2021-01-01">2021.01.01</time>
         <span className="inline-block ml-2.5 w-12 h-5 text-xs leading-[20px] text-center text-white bg-black">
@@ -49,8 +49,8 @@ const T10Index: NextPage = () => {
       </Head>
 
       <header id="header" className="flex justify-between items-center h-20">
-        <div className="md:flex items-center px-4 mx-auto w-full max-w-5xl">
-          <h1 className="my-2 md:my-0 mr-14 w-20 md:w-24 leading-none">
+        <div className="items-center px-4 mx-auto w-full max-w-5xl md:flex">
+          <h1 className="my-2 mr-14 w-20 leading-none md:my-0 md:w-24">
             <Link href="/t10/">
               <a className="block">
                 <Image src="/img/t10/logo.svg" alt="Web Entertainment Design" width={540} height={140} />
@@ -70,39 +70,39 @@ const T10Index: NextPage = () => {
           </nav>
         </div>
         <Link href="#">
-          <a className="hidden md:flex justify-center items-center w-48 h-20 text-xs text-white bg-black hover:bg-gray-800">
+          <a className="hidden justify-center items-center w-48 h-20 text-xs text-white bg-black hover:bg-gray-800 md:flex">
             お問い合わせ
           </a>
         </Link>
       </header>
 
       <main>
-        <div id="mainvisual" className="relative mb-20 md:mb-32 w-full h-[calc(100vh-80px)]">
+        <div id="mainvisual" className="relative mb-20 w-full h-[calc(100vh-80px)] md:mb-32">
           <Image src="/img/t10/mainvisual.jpg" alt="" layout="fill" objectFit="cover" />
         </div>
 
         <section id="news" className="px-4 mx-auto mb-32 w-full max-w-5xl">
-          <h2 className="after:block mb-6 md:mb-12 after:w-10 after:h-px leading-none after:bg-black">
+          <h2 className="after:block mb-6 after:w-10 after:h-px leading-none after:bg-black md:mb-12">
             <span className="block mb-2.5 text-4xl tracking-[0.3em]">NEWS</span>
-            <span className="block mb-6 md:mb-9 text-sm">ニュース</span>
+            <span className="block mb-6 text-sm md:mb-9">ニュース</span>
           </h2>
 
-          <ul className="md:flex justify-between">
+          <ul className="justify-between md:flex">
             {[...Array(3)].map((_, i) => (
               <NewsList key={i} />
             ))}
           </ul>
         </section>
 
-        <section id="about" className="md:flex mb-20 md:mb-32">
-          <div className="relative mb-8 md:mb-0 md:w-7/12 h-[300px] md:h-[400px]">
+        <section id="about" className="mb-20 md:flex md:mb-32">
+          <div className="relative mb-8 h-[300px] md:mb-0 md:w-7/12 md:h-[400px]">
             <Image src="/img/t10/about.jpg" alt="" layout="fill" objectFit="cover" />
           </div>
 
-          <div className="px-4 md:px-[5%] md:pt-[180px] w-full md:w-5/12">
-            <h2 className="after:block mb-6 md:mb-12 after:w-10 after:h-px leading-none after:bg-black">
+          <div className="px-4 w-full md:px-[5%] md:pt-[180px] md:w-5/12">
+            <h2 className="after:block mb-6 after:w-10 after:h-px leading-none after:bg-black md:mb-12">
               <span className="block mb-2.5 text-4xl tracking-[0.3em]">ABOUT</span>
-              <span className="block mb-6 md:mb-9 text-sm">私たちについて</span>
+              <span className="block mb-6 text-sm md:mb-9">私たちについて</span>
             </h2>
             <p className="leading-loose">
               テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト
@@ -116,13 +116,13 @@ const T10Index: NextPage = () => {
           </div>
         </section>
 
-        <section id="business" className="px-4 mx-auto mb-20 md:mb-32 w-full max-w-5xl">
-          <h2 className="after:block mb-6 md:mb-12 after:w-10 after:h-px leading-none after:bg-black">
+        <section id="business" className="px-4 mx-auto mb-20 w-full max-w-5xl md:mb-32">
+          <h2 className="after:block mb-6 after:w-10 after:h-px leading-none after:bg-black md:mb-12">
             <span className="block mb-2.5 text-4xl tracking-[0.3em]">BUSINESS</span>
-            <span className="block mb-6 md:mb-9 text-sm">事業内容</span>
+            <span className="block mb-6 text-sm md:mb-9">事業内容</span>
           </h2>
 
-          <div className="md:flex justify-between p-0 md:px-[10%]">
+          <div className="justify-between p-0 md:flex md:px-[10%]">
             <div className="mt-24 mb-8 md:w-[46%]">
               <BusinessItem src="/img/t10/business1.jpg" title="Web制作・マーケティング" />
               <BusinessItem src="/img/t10/business2.jpg" title="インターネットメディア事業" />
@@ -135,11 +135,11 @@ const T10Index: NextPage = () => {
           </div>
         </section>
 
-        <section id="company" className="md:flex md:relative items-center px-4 mx-auto w-full max-w-5xl md:h-[750px]">
-          <div className="md:absolute top-0 left-0 py-10 md:py-[100px] px-5 md:pr-[8%] md:pl-[6%] mb-5 md:mb-0 w-full md:w-[55%] bg-white">
-            <h2 className="after:block mb-6 md:mb-12 after:w-10 after:h-px leading-none after:bg-black">
+        <section id="company" className="items-center px-4 mx-auto w-full max-w-5xl md:flex md:relative md:h-[750px]">
+          <div className="top-0 left-0 py-10 px-5 mb-5 w-full bg-white md:absolute md:py-[100px] md:pr-[8%] md:pl-[6%] md:mb-0 md:w-[55%]">
+            <h2 className="after:block mb-6 after:w-10 after:h-px leading-none after:bg-black md:mb-12">
               <span className="block mb-2.5 text-4xl tracking-[0.3em]">COMPANY</span>
-              <span className="block mb-6 md:mb-9 text-sm">会社情報</span>
+              <span className="block mb-6 text-sm md:mb-9">会社情報</span>
             </h2>
 
             <dl className="flex flex-wrap items-center">
@@ -161,7 +161,7 @@ const T10Index: NextPage = () => {
             </dl>
           </div>
 
-          <div className="md:absolute top-[115px] right-0 md:w-[53%]">
+          <div className="top-[115px] right-0 md:absolute md:w-[53%]">
             <div className="relative h-[400px]">
               <Image src="/img/t10/company.jpg" alt="" layout="fill" objectFit="cover" />
             </div>
@@ -171,8 +171,8 @@ const T10Index: NextPage = () => {
 
       <footer id="footer" className="pb-5 bg-white">
         <div className="px-4 mx-auto w-full max-w-5xl">
-          <div className="md:flex justify-between items-center py-10">
-            <div className="my-2 md:my-0 w-20 md:w-24">
+          <div className="justify-between items-center py-10 md:flex">
+            <div className="my-2 w-20 md:my-0 md:w-24">
               <Image src="/img/t10/logo.svg" alt="Web Entertainment Design" width={540} height={140} />
             </div>
             <div>

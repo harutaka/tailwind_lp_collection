@@ -14,10 +14,14 @@ const LpCard = ({ href, imgSrc, title, description }: LpCardProps) => {
     <div className="p-4 md:w-1/3">
       <Link href={href}>
         <a>
-          <div className="overflow-hidden h-full rounded-lg border-2 border-gray-300 border-opacity-60 hover:opacity-75">
-            <div className="relative w-full md:h-36 lg:h-48">
-              <Image src={imgSrc} alt="profile" layout="fill" objectFit="cover" />
-            </div>
+          <div className="overflow-hidden h-full rounded-lg border-2 border-gray-300 hover:opacity-75">
+            <Image
+              className="object-cover object-center w-full md:h-36 lg:h-48"
+              src={imgSrc}
+              alt="blog"
+              width={800}
+              height={400}
+            />
             <div className="p-6">
               <h1 className="mb-3 text-lg font-medium text-gray-900">{title}</h1>
               <p className="mb-3 leading-relaxed">{description}</p>
@@ -44,8 +48,8 @@ const Home: NextPage = () => {
 
       <div className="container px-5 pt-12 mx-auto">
         <div className="flex flex-col flex-wrap items-center w-full text-center">
-          <h1 className="mb-2 text-2xl sm:text-3xl font-medium text-gray-900">ランディングページの練習一覧</h1>
-          <p className="w-full lg:w-1/2 leading-relaxed text-gray-500">Next.js + Tailwindcss にて制作しています。</p>
+          <h1 className="mb-2 text-2xl font-medium text-gray-900 sm:text-3xl">ランディングページの練習一覧</h1>
+          <p className="w-full leading-relaxed text-gray-500 lg:w-1/2">Next.js + Tailwindcss にて制作しています。</p>
         </div>
       </div>
 
